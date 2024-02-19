@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devops-demo-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: devops-demo
+  template:
+    metadata:
+      labels:
+        app: devops-demo
+    spec:
+      containers:
+        - name: devops-demo
+          image: mimaraslan/devops-demo-pipeline:1.0.0-9
+          resources:
+            limits:
+              memory: "256Mi"
+              cpu: "500m"
+          ports:
+            - containerPort: 8080
