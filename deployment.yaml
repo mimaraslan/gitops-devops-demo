@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: devops-demo
-          image: mimaraslan/devops-demo-pipeline:latest
+          image: mimaraslan/devops-demo-pipeline:1.0.0-13
           resources:
             limits:
               memory: "256Mi"
