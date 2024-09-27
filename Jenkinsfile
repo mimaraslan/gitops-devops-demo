@@ -2,7 +2,7 @@ pipeline {
     agent { label "Jenkins-Agent" }
     
     environment {
-         APP_NAME = "devops-003-pipeline-aws"
+          APP_NAME = "devops-003-pipeline-aws"
     }
 
     stages {
