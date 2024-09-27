@@ -5,7 +5,7 @@ pipeline {
           APP_NAME = "devops-003-pipeline-aws"
     }
 
-    stages {
+     stages {
         stage("Cleanup Workspace") {
             steps {
                 cleanWs()
@@ -41,6 +41,7 @@ pipeline {
                 }
             }
         }
-      
+
+         
     }
 }
