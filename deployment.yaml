@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: devops-demo
-          image: mimaraslan/devops-003-pipeline-aws:1.0.6
+          image: mimaraslan/devops-003-pipeline-aws:1.0.10
           resources:
             limits:
               memory: "256Mi"
