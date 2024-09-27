@@ -1,5 +1,5 @@
 pipeline {
-    agent { label "Jenkins-Agent" }
+    agent { label "My-Jenkins-Agent" }
     
     environment {
           APP_NAME = "devops-003-pipeline-aws"
